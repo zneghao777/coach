@@ -1,0 +1,9 @@
+server:
+  port: 8084
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://zh-zenghao666.mysql.rds.aliyuncs.com:3306/gymdb?serverTimezone=UTC
+      username: zenghao666
+      password: Zenghao123
