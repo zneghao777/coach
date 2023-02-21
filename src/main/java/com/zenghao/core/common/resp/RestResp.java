@@ -30,9 +30,15 @@ public class RestResp<T> {
         this.message = ErrorCodeEnum.OK.getMessage();
     }
 
-    private RestResp(ErrorCodeEnum errorCode) {
+    public RestResp(ErrorCodeEnum errorCode) {
         this.code = errorCode.getCode();
         this.message = errorCode.getMessage();
+    }
+
+    public  RestResp(ErrorCodeEnum errorCode, T data) {
+        this.code = errorCode.getCode();
+        this.message = errorCode.getMessage();
+        this.data = data;
     }
 
     private RestResp(T data) {

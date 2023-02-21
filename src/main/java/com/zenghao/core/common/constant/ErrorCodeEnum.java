@@ -24,6 +24,11 @@ public enum ErrorCodeEnum {
      */
     OK("00000", "一切 ok"),
 
+    LOGIN_OK("200", "登录成功"),
+
+    REGISTER_OK("200","注册成功"),
+
+    LOGIN_OUT("200","退出成功！"),
     /**
      * 一级宏观错误码，用户端错误
      */
@@ -53,6 +58,8 @@ public enum ErrorCodeEnum {
      * 用户名已存在
      */
     USER_NAME_EXIST("A0111", "用户名已存在"),
+
+    USER_PHONE_EXIST("A0112","手机号已注册"),
 
     /**
      * 用户账号不存在

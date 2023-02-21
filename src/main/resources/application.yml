@@ -7,3 +7,6 @@ spring:
       url: jdbc:mysql://zh-zenghao666.mysql.rds.aliyuncs.com:3306/gymdb?serverTimezone=UTC
       username: zenghao666
       password: Zenghao123
+
+knife4j:
+  enable: true
