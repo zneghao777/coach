@@ -7,7 +7,7 @@ import lombok.Data;
 public class CoachPo {
 
     @ApiModelProperty("id")
-    private Integer id;
+    private String id;
 
     @ApiModelProperty("名字")
     private String name;
@@ -18,10 +18,14 @@ public class CoachPo {
     @ApiModelProperty("图片地址")
     private String imageUrl;
 
-    public CoachPo(Integer id, String name, String description, String imageUrl) {
+    public CoachPo(String id, String name, String description, String imageUrl) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.imageUrl = imageUrl;
+    }
+
+    public CoachPo() {
+
     }
 }

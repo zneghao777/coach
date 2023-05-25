@@ -75,6 +75,10 @@ public class RestResp<T> {
         return new RestResp<>(ErrorCodeEnum.SYSTEM_ERROR);
     }
 
+    public static RestResp<String> error(String msg) {
+        return new RestResp<>(msg);
+    }
+
     /**
      * 判断是否成功
      */

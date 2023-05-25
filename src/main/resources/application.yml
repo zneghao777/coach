@@ -2,11 +2,24 @@ server:
   port: 8084
 spring:
   datasource:
-    druid:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://zh-zenghao666.mysql.rds.aliyuncs.com:3306/gymdb?serverTimezone=UTC
-      username: zenghao666
-      password: Zenghao123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://zh-zenghao666.mysql.rds.aliyuncs.com:3306/gymdb?serverTimezone=UTC
+    username: zenghao666
+    password: Zenghao123
+    maxPoolSize: 200
+    minPoolSize: 10
+    initialPoolSize: 10
+    acquireIncrement: 5
+    idleConnectionTestPeriod: 28000
+    maxIdleTime: 28000
 
+  tengxun:
+    SecretId: AKIDJQIvKNBl6C3f2B8qKZ1EBtOgjYAXfZE4
+    SecretKey: d193jAMIzQczEJBpGVpyud9TaVDiz4uW
+    region: ap-nanjing
+    url: https://lvgcos.ap-nanjing.myqcloud.com
+    bucketName: ggkt-1311813310
 knife4j:
   enable: true
+
+

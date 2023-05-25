@@ -1,17 +1,10 @@
-package com.zenghao.entity;
+package com.zenghao.dto.req;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
-
 @Data
-public class Coach {
-
-    @TableId(type = IdType.AUTO)
-    @ApiModelProperty("id")
-    private String id;
+public class CoachAddQo {
 
     @ApiModelProperty("名字")
     private String name;
@@ -27,5 +20,4 @@ public class Coach {
 
     @ApiModelProperty("图片地址")
     private String imageUrl;
-
 }
